@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Methods.dart';
@@ -16,8 +18,12 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("Home Page"),
         centerTitle: true,
+        
 
       ),
+      body: Column(children: [
+        TextButton(onPressed: ()=>logOut(context), child: Text("logout"))
+      ],),
     );
   }
 }

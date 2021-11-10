@@ -1,5 +1,6 @@
 import 'package:chat_app/CreateAccount.dart';
 import 'package:chat_app/Methods.dart';
+import 'package:chat_app/forgot.dart';
 import 'package:chat_app/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -96,7 +97,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         fontWeight: FontWeight.w500,
                       ),
                     ),
-                  )
+                  ),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => ForgotPassword()));
+                      },
+                      child: Text('fogot password')),
                 ],
               ),
             ),
